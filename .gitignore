@@ -1,0 +1,10 @@
+/.idea
+/.vscode
+
+/input_pdf
+
+/input_txt/*
+!/input_txt/.keep
+
+/output/*
+!/output/.keep

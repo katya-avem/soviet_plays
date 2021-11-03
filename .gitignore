@@ -3,8 +3,5 @@
 
 /input_pdf
 
-/input_txt/*
-!/input_txt/.keep
-
-/output/*
-!/output/.keep
+/plays_tei_raw/*
+!/plays_tei_raw/.keep

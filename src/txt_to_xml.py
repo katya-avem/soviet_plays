@@ -4,8 +4,8 @@ from collections import Counter
 from pprint import pprint
 from transliterate import transliterate
 
-input_folder = Path('input_txt').resolve()
-output_folder = Path('output').resolve()
+input_folder = Path('plays_txt').resolve()
+output_folder = Path('plays_tei_raw').resolve()
 
 input_filename = 'В одном городе. Софонов. 1947.txt'
 output_filename = 'В одном городе. Софонов. 1947.xml'

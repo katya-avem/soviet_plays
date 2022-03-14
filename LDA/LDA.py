@@ -1,55 +1,53 @@
-import pandas as pd
-import gensim
-import os
-from gensim.utils import simple_preprocess
-from gensim.parsing.preprocessing import STOPWORDS
-from nltk.stem import WordNetLemmatizer, SnowballStemmer
-from nltk.stem.porter import *
 import numpy as np
-np.random.seed(2018)
-import nltk
-nltk.download('wordnet')
-
-
-path = "C:/Users/katya/Documents/PyCharmProjects/soviet_plays/LDA"
-dirs = os.listdir(path)
-
-
-def preprocess(text):
-    result = []
-    for token in gensim.utils.simple_preprocess(text):
-        if token not in gensim.parsing.preprocessing.STOPWORDS and len(token) > 3:
-            result.append(token)
-    return result
-
-with open(os.path.join(path, 'ALL_SPEECH_FIO.txt'), encoding="utf-8") as file:
-
-    df = np.array([file.read().split('\n')])
-    df = pd.DataFrame(df.T)
-    print(df)
-
 from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.feature_extraction.text import CountVectorizer
-cv = CountVectorizer(max_df=0.95, min_df=2, stop_words=["и", "в", "во", "не", "что", "он", "оно", "на", "я", "с", "со", "как", "а", "то", "это", "все", "она", "так", "его", "весь", "но", "да", "ты", "к", "у", "же", "вы", "за", "бы", "по", "только", "ее", "мне", "меня", "мень", "было", "вот", "от", "меня", "еще", "нет", "о", "из", "ему", "теперь", "когда", "даже", "ну", "вдруг", "ли", "если", "уже", "или", "ни", "быть", "был", "него", "до", "вас", "опять", "уж", "вам", "ведь", "там", "потом", "себя", "ничего", "ей", "может", "они", "тут", "где", "есть", "надо", "ней", "для", "мы", "тебя", "их", "чем", "была", "сам", "чтоб", "без", "будто", "чего", "раз", "тоже", "себе", "под", "будет", "ж", "тогда", "кто", "этот", "того", "потому", "этого", "какой", "совсем", "ним", "здесь", "этом", "один", "почти", "мой", "тем", "чтобы", "нее", "сейчас", "были", "куда", "зачем", "всех", "никогда", "можно", "при", "наконец", "два", "об", "другой", "хоть", "после", "над", "больше", "тот", "через", "эти", "нас", "про", "всего", "них", "какая", "много", "разве", "три", "эту", "моя", "впрочем", "хорошо", "свою", "этой", "перед", "иногда", "лучше", "чуть", "том", "нельзя", "такой", "им", "более", "всю", "между"])
-dtm = cv.fit_transform(df[0])
 from sklearn.decomposition import LatentDirichletAllocation
-LDA = LatentDirichletAllocation(n_components=6,random_state=42)
-LDA.fit(dtm)
+from nltk.stem.porter import *
 
-single_topic = LDA.components_[0]
-top_10_words = single_topic.argsort()[-10:]
+np.set_printoptions(suppress=True)
+# nltk.download('wordnet')
 
-for index in top_10_words:
-    print(cv.get_feature_names()[index])
 
-for index,topic in enumerate(LDA.components_):
-    print(f'THE TOP 15 WORDS FOR TOPIC #{index}')
-    print([cv.get_feature_names()[i] for i in topic.argsort()[-15:]])
-    print('\n')
+if __name__ == '__main__':
+    with open('./Speech_of_characters_with_replaced_names.txt', encoding="utf-8") as file:
+        texts = file.readlines()
+        texts = [text.strip() for text in texts]
+        texts = [re.sub("['\[\],]", "", text) for text in texts]
 
-topic_results = LDA.transform(dtm)
-print(topic_results.shape)
-print(topic_results[0])
+    stop_words = ["и", "в", "во", "не", "что", "он", "оно", "на", "я", "с", "со", "как", "а", "то", "это", "все", "она",
+                  "так", "его", "весь", "но", "да", "ты", "к", "у", "же", "вы", "за", "бы", "по", "только", "ее", "мне",
+                  "меня", "мень", "было", "вот", "от", "меня", "еще", "нет", "о", "из", "ему", "теперь", "когда",
+                  "даже", "ну", "вдруг", "ли", "если", "уже", "или", "ни", "быть", "был", "него", "до", "вас", "опять",
+                  "уж", "вам", "ведь", "там", "потом", "себя", "ничего", "ей", "может", "они", "тут", "где", "есть",
+                  "надо", "ней", "для", "мы", "тебя", "их", "чем", "была", "сам", "чтоб", "без", "будто", "чего", "раз",
+                  "тоже", "себе", "под", "будет", "ж", "тогда", "кто", "этот", "того", "потому", "этого", "какой",
+                  "совсем", "ним", "здесь", "этом", "один", "почти", "мой", "тем", "чтобы", "нее", "сейчас", "были",
+                  "куда", "зачем", "всех", "никогда", "можно", "при", "наконец", "два", "об", "другой", "хоть", "после",
+                  "над", "больше", "тот", "через", "эти", "нас", "про", "всего", "них", "какая", "много", "разве",
+                  "три", "эту", "моя", "впрочем", "хорошо", "свою", "этой", "перед", "иногда", "лучше", "чуть", "том",
+                  "нельзя", "такой", "им", "более", "всю", "между"]
 
-print(topic_results[0].round(2))
-df['Topic'] = topic_results.argmax(axis=1)
+    cv = CountVectorizer(max_df=0.95, min_df=2, stop_words=stop_words)
+    tf = cv.fit_transform(texts)
+
+    n_components = 6
+    LDA = LatentDirichletAllocation(n_components=n_components)
+    LDA.fit(tf)
+
+    top_words = []
+    for i in range(n_components):
+        component = LDA.components_[i]
+        words_indices = component.argsort()[-10:]
+        words = [cv.get_feature_names_out()[j] for j in words_indices]
+        top_words.append(words)
+
+    for item in top_words:
+        print(item)
+
+    topic_results = LDA.transform(tf).round(2)
+    print()
+    print(topic_results)
+
+    topic_results = topic_results.argmax(axis=1)
+    print()
+    print(topic_results + 1)
+

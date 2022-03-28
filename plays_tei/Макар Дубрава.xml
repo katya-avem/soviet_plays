@@ -987,7 +987,7 @@
 <sp who="#oksana"><speaker>Оксана.</speaker> <p>А чего же это вам не спится?</p></sp>
 <sp who="#gavrila"><speaker>Гаврила.</speaker> <p>Это у нас <stage>(вздохнул)</stage> чисто нервное. Всякие мысли сон гонят.</p></sp>
 <sp who="#oksana"><speaker>Оксана.</speaker> <p>Ага, вижу... Приходите, когда Макар приедет, угощу арбузами.</p></sp>
-<sp whp="gavrila trofim"><speaker>Парни.</speaker> <p>Спасибо.</p></sp>
+<sp who="gavrila trofim"><speaker>Парни.</speaker> <p>Спасибо.</p></sp>
     <stage>Оксана ушла в дом.</stage>
 <sp who="#trofim"><speaker>Трофим.</speaker> <p>Пойдем, Гаврила. Девушки устали, пусть отдохнут.</p></sp>
 <sp who="#gavrila"><speaker>Гаврила.</speaker> <p>Это верно. <stage>(Подходит к саду.)</stage></p></sp>
@@ -1227,7 +1227,7 @@
 <sp who="#makar"><speaker>Макар.</speaker> <p>Не так уж здорово.</p></sp>
 <sp who="#orlov"><speaker>Орлов.</speaker> <p>Мы подсчитали: речь министра была	всего лишь на тридцать пять строк больше вашей.</p></sp>
 <sp who="#makar"><speaker>Макар.</speaker> <p>Подсчитали? <stage>(Смеется.)</stage></p></sp>
-<sp whp="#orlov #zinchenko #hmara"><speaker>Старики.</speaker> <p>В точности.</p></sp>
+<sp who="#orlov #zinchenko #hmara"><speaker>Старики.</speaker> <p>В точности.</p></sp>
     <stage>Появляется Кондрат.</stage>
 <sp who="#makar"><speaker>Макар.</speaker> <p>Спроси у Кондрата.</p></sp>
 <sp who="#orlov"><speaker>Орлов.</speaker> <p>Кондрат, почему о тебе только упомянули, что выступал, а больше ни слова?</p></sp>

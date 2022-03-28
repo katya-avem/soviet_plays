@@ -8,7 +8,7 @@ np.set_printoptions(suppress=True)
 
 
 if __name__ == '__main__':
-    with open('./Speech_of_characters_with_replaced_names.txt', encoding="utf-8") as file:
+    with open('./Speech_with_replaced_names.txt', encoding="utf-8") as file:
         texts = file.readlines()
         texts = [text.strip() for text in texts]
         texts = [re.sub("['\[\],]", "", text) for text in texts]
@@ -29,7 +29,7 @@ if __name__ == '__main__':
     cv = CountVectorizer(max_df=0.95, min_df=2, stop_words=stop_words)
     tf = cv.fit_transform(texts)
 
-    n_components = 6
+    n_components = 5
     LDA = LatentDirichletAllocation(n_components=n_components)
     LDA.fit(tf)
 

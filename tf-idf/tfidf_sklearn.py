@@ -5,7 +5,7 @@ from pathlib import Path
 from sklearn.feature_extraction.text import TfidfVectorizer
 import os
 
-directory_path = "C:/Users/katya/Documents/PyCharmProjects/soviet_plays/speech_FIO"
+directory_path = "../speech_of_characters (replaced name)"
 
 
 text_files = glob.glob(f"{directory_path}/*.txt")
@@ -32,8 +32,9 @@ tfidf_df = pd.DataFrame(tfidf_matrix, index=text_titles, columns=tfidf_vectorize
 tfidf_df = tfidf_df.stack().reset_index()
 tfidf_df = tfidf_df.rename(columns={0: 'tf_idf', 'level_0': 'document', 'level_1': 'term', 'level_2': 'term'})
 
-result_df = tfidf_df.sort_values(by=['document', 'tf_idf'], ascending=[True, False]).groupby(['document']).head(50)
+result_df = tfidf_df.sort_values(by=['document', 'tf_idf'], ascending=[True, False]).groupby(['document']).head(30)
 result_df.to_excel('./tf_idf.xlsx')
 
 with pd.option_context('display.max_rows', 100):
     print(result_df)
+

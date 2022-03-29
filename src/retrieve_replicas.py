@@ -48,6 +48,7 @@ groups = {
         ('Поют жаворонки.xml', '#pytlevanyi'),  # Пытлеваный
         ('Семья Аллана.xml', '#bairam'),  # Байрам
         ('На новой земле.xml', '#mavlon'),  # Мавлон
+        ('Хлеб наш насущный.xml', '#tverdova'),  # Твердова
     ],
     'partorg': [
         ('Макар Дубрава.xml', '#makar'),  # Макар
@@ -287,3 +288,4 @@ def main(groups):
 
 if __name__ == '__main__':
     main(groups)
+

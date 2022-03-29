@@ -29,7 +29,7 @@ if __name__ == '__main__':
     cv = CountVectorizer(max_df=0.95, min_df=2, stop_words=stop_words)
     tf = cv.fit_transform(texts)
 
-    n_components = 5
+    n_components = 6
     LDA = LatentDirichletAllocation(n_components=n_components)
     LDA.fit(tf)
 

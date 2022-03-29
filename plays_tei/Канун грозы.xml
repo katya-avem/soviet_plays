@@ -459,7 +459,7 @@
 <sp who="#tukin #malanya"><speaker>Тюкин, Маланья <stage>(вместе)</stage>.</speaker> <p>Геннадий Николаевич, куда вы?</p></sp>
 <stage>Кульчицкий уходит. Молчание.</stage>
 <sp who="#fedorov"><speaker>Федоров <stage>(оглядев всех)</stage>.</speaker> <p>Ну, так как же? Может, поклонимся хозяину?</p></sp>
-<sp who="#shum"><speaker>Шум.</speaker> <p>Отдельные возгласы возражений.</p></sp>
+<stage>Шум. Отдельные возгласы возражений.</stage>
 <sp who="#nikifor"><speaker>Никифор.</speaker> <p>Да я от роду никому не кланялся.</p></sp>
 <sp who="#malanya"><speaker>Маланья <stage>(всем)</stage>.</speaker> <p>Как хотите, выхожу на работу и мужика выволоку.</p></sp>
 <sp who="#stepan"><speaker>Степан.</speaker> <p>Эх, Маланья — голова баранья.</p></sp>
@@ -1312,7 +1312,7 @@
 <sp who="#prigorov"><speaker>Пригоров.</speaker> <p>Плечо в плечо.</p></sp>
 <sp who="#nikifor"><speaker>Никифор.</speaker> <p>А вы мне басни не расскавывайте. Ученый. </p></sp>
 <sp who="#trifon"><speaker>Трифон.</speaker> <p>И умный как будто парень, а на поверку выходит — дурак.</p></sp>
-<sp who="#shum"><speaker>Шум.</speaker> <p>Входит Филимонов. За ним — Тюкин с берданкой наперевес. У Филимонова в руках мешочек.</p></sp>
+<stage>Шум. Входит Филимонов. За ним — Тюкин с берданкой наперевес. У Филимонова в руках мешочек.</stage>
 <sp who="#tukin"><speaker>Тюкин <stage>(в крайней ажитации)</stage>.</speaker> <p>Кому команда дана — руки вверх! Ей-бо, стрелять буду. Заряжено.</p></sp>
 <sp who="#nikita"><speaker>Никита.</speaker> <p>Э-э, да это Филимонов? Что это вы у складов делаете?</p></sp>
 <sp who="#filimonov"><speaker>Филимонов.</speaker> <p>А тебе какое дело. Гуляю.</p></sp>

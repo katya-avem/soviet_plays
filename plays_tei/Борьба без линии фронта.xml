@@ -726,7 +726,7 @@
 <sp who="#hans"><speaker>Ханс <stage>(смеясь)</stage>.</speaker> <p>Yes, sir! Так приходится думать.</p></sp>
 <sp who="#tiit_kondor"><speaker>Тийт Кондор.</speaker> <p>А общее положение? Как выглядит оно?</p></sp>
 <sp who="#hans"><speaker>Ханс.</speaker> <p>Как выглядит общее положение?.. <stage>(Разводит руками.)</stage> Многие уже раздеты в прямом смысле этого слова... Все, что имело хоть какую-нибудь ценность, перекочевало в лапы спекулянтов...</p></sp>
-<sp who="#golosa_v_stoloy"><speaker>Голоса в столовой <stage>(начинают новую, шуточную песню)</stage>.</speaker>
+<sp who="#golosa_v_stolovoy"><speaker>Голоса в столовой <stage>(начинают новую, шуточную песню)</stage>.</speaker>
 <lg>
 <l>Не давай ты в океане</l>
 <l>сыну Яну в лодке плыть.</l>
@@ -737,7 +737,7 @@
 <sp who="#tiit_kondor"><speaker>Тийт Кондор <stage>(тихо, со злостью)</stage>.</speaker> <p>Да-да, да-да. Так-то...</p></sp>
 <sp who="#hans"><speaker>Ханс.</speaker> <p>Yes, it's all right, sir<note place="foot">Да, это совершенно верно, сэр.<lang>англ.</lang></note>. <stage>(С удовольствием продолжает.)</stage> А нужда растет, растет. <stage>(Пауза.)</stage> Многие уже начали пухнуть. Больше всего, конечно, дети.</p></sp>
 <stage>Фигура Аугуста на мгновение мелькнула на балконе и снова скрылась в темноте.</stage>
-<sp who="#golosa_v_stoloy"><speaker>Голоса в столовой <stage>(поют.)</stage></speaker>
+<sp who="#golosa_v_stolovoy"><speaker>Голоса в столовой <stage>(поют.)</stage></speaker>
 <lg>
 <l>Или Яна для забавы</l>
 <l>кит проглотит невзначай,</l>
@@ -752,7 +752,7 @@
 <sp who="#hans"><speaker>Ханс <stage>(хихикая)</stage>.</speaker> <p>Не густо и у них, сэр. <stage>(Пауза.)</stage> У Tooмаса плохо с мальчиком.</p></sp>
 <sp who="#tiit_kondor"><speaker>Тийт Кондор.</speaker> <p>Да-да, да-да? А что с ним?</p></sp>
 <sp who="#hans"><speaker>Ханс.</speaker> <p>Не... знаю. Парень и раньше хирел у него. Кажется, легкие. Ну, а теперь, когда плохо стало с пищей... понятно, что...</p></sp>
-<sp who="#golosa_v_stoloy"><speaker>Голоса из столовой <stage>(нестройно)</stage>.</speaker> <p>Именинница..., госпожа именинница... давайте чокнемся! А где сам капитан?.. Где сам капитан?..</p></sp>
+<sp who="#golosa_v_stolovoy"><speaker>Голоса из столовой <stage>(нестройно)</stage>.</speaker> <p>Именинница..., госпожа именинница... давайте чокнемся! А где сам капитан?.. Где сам капитан?..</p></sp>
 <sp who="#golos_fabricanta_kangura"><speaker>Голос фабриканта Кангура.</speaker> <p>Капитана сюда... посадить его рядом с супругой! Ка-пи-та-на сю-да!</p></sp>
 <stage>Входит  госпожа Кондор.</stage>
 <sp who="#gospoja_kondor"><speaker>Госпожа Кондор.</speaker> <p>Отец, тебя ждут.</p></sp>

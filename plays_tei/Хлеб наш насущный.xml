@@ -686,7 +686,7 @@
 <sp who="#andriyan"><speaker>Андриян.</speaker> <p>Не твоего ума дело. Матрена, ответствуй!</p></sp>
 <sp who="#zorina"><speaker>Зорина.</speaker> <p>Похороним, конечно!</p></sp>
 <sp who="#andriyan"><speaker>Андриян.</speaker> <p>Слово сказано. Слышал, народ?</p></sp>
-<sp who="golosa"><speaker>Голоса.</speaker> <p>Слышал.</p></sp>
+<sp who="#golosa"><speaker>Голоса.</speaker> <p>Слышал.</p></sp>
 <stage>И снова молчание. Хлещет за окнами дождь, стонут деревья, бьют мокрыми ветвями по стеклам.</stage>
 <sp who="#nastasya"><speaker>Настасья.</speaker> <p>Да что ж ты молчишь, председатель?</p></sp>
 <sp who="#golosa"><speaker>Голоса.</speaker> <p>Ты своя! Ученая! Скажи!</p></sp>

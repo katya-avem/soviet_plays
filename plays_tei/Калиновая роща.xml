@@ -90,10 +90,10 @@
 <sp who="#vakulenko"><speaker>Вакуленко.</speaker> <p>Как стонет, бедняга.</p></sp>
 <stage>Из дома через открытое окно доносится голос Романюка: «Надя… Надежда...»</stage>
 <sp who="#nadejda"><speaker>Голос Надежды:</speaker> <p>«Что, отец?»</p></sp>
-<sp whp="romanuk"><speaker>Голос Романюка:</speaker> <p>«Ой, голова разрывается... Дай мне, доченька, пираминдону, да запить его чем-нибудь...»</p></sp>
+<sp who="#romanuk"><speaker>Голос Романюка:</speaker> <p>«Ой, голова разрывается... Дай мне, доченька, пираминдону, да запить его чем-нибудь...»</p></sp>
 <sp who="#vasilisa"><speaker>Василиса.</speaker> <p>Лекарство просит. Это его что-то крепко взяло... Не воспаление ли легких?</p></sp>
 <sp who="#vakulenko"><speaker>Вакуленко.</speaker> <p>Тише...</p>
-<sp whp="romanuk"><speaker>Голос Романюка:</speaker> <p>«Пойди в погреб, принеси жбан квасу побольше».</p></sp>
+<sp who="#romanuk"><speaker>Голос Романюка:</speaker> <p>«Пойди в погреб, принеси жбан квасу побольше».</p></sp>
 <p>Ясно.</p></sp>
 <sp who="#vasilisa"><speaker>Василиса.</speaker> <p>Что?</p></sp>
 <sp who="#vakulenko"><speaker>Вакуленко.</speaker> <p>На квас потянуло. Будет жить.</p></sp>
@@ -1482,7 +1482,7 @@
 <sp who="#krylataya"><speaker>Крылатая.</speaker> <p>Кто это?</p></sp>
 <sp who="#vasilisa"><speaker>Василиса.</speaker> <p>Сестра художника, вчера приехала, а сегодня уезжает.</p></sp>
 <sp who="#aga"><speaker>Ага <stage>(подходит к ним)</stage>.</speaker> <p>Доброе утро.</p></sp>
-<sp who="#vasilisa krylataya grudchenko purhavka"><speaker>Все.</speaker> <p>Доброе утро.</p></sp>
+<sp who="#vasilisa #krylataya #grudchenko #purhavka"><speaker>Все.</speaker> <p>Доброе утро.</p></sp>
 <sp who="#vasilisa"><speaker>Василиса.</speaker> <p>Садитесь, Ага Александровна. Сейчас за вами подъедут.</p></sp>
 <sp who="#aga"><speaker>Ага.</speaker> <p>Мерси. <stage>(Садится, Василисе.)</stage> А я не знала, что у вас орден, да еще и Ленина...</p></sp>
 <sp who="#vasilisa"><speaker>Василиса.</speaker> <p>Не только у меня орден. Знакомьтесь, это мои подруги по звену.</p></sp>
@@ -1630,7 +1630,7 @@
 <sp who="#batura"><speaker>Батура.</speaker> <p>Правда, Надежда... Матрос Горовой — это Карп.</p>
 <stage>Надежда ушла в сад.</stage>
 <p><stage>(Тихо.)</stage> Друг мой... друг. <stage>(Сел, закрыл лицо рукой.)</stage></p></sp>
-<sp who="#pauza"><speaker>Пауза.</speaker> <p>Входит Ветровой.</p></sp>
+<stage>Пауза. Входит Ветровой.</stage>>
 <sp who="#vetrovoi"><speaker>Ветровой <stage>(издали)</stage>.</speaker> <p>Сергей Павлович.</p></sp>
 <stage>Батура не отвечает. Ветровой подошел, поднял сорочку, смотрит на нее.</stage>
 <sp who="#batura"><speaker>Батура.</speaker> <p>Что, Карп?</p></sp>

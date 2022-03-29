@@ -604,7 +604,7 @@
 <sp who="#pavel"><speaker>Павел.</speaker> <p>Бешено ездил. Это правда. Дни молодости не забыл, Кондрат? <stage>(Начинает тихо петь.)</stage></p></sp>
     <stage>Кондрат играет и тоже поет.</stage>
     <stage>Павел умолк, слушает, как Кондрат играет и поет песню про коногона.</stage>
-    <sp who="kondrat">
+    <sp who="#kondrat">
     <lg>
     <l>Вот лошадь мчится по продольной.</l>
     <l>По темной, узкой и сырой,</l>
@@ -987,7 +987,7 @@
 <sp who="#oksana"><speaker>Оксана.</speaker> <p>А чего же это вам не спится?</p></sp>
 <sp who="#gavrila"><speaker>Гаврила.</speaker> <p>Это у нас <stage>(вздохнул)</stage> чисто нервное. Всякие мысли сон гонят.</p></sp>
 <sp who="#oksana"><speaker>Оксана.</speaker> <p>Ага, вижу... Приходите, когда Макар приедет, угощу арбузами.</p></sp>
-<sp who="gavrila trofim"><speaker>Парни.</speaker> <p>Спасибо.</p></sp>
+<sp who="#gavrila #trofim"><speaker>Парни.</speaker> <p>Спасибо.</p></sp>
     <stage>Оксана ушла в дом.</stage>
 <sp who="#trofim"><speaker>Трофим.</speaker> <p>Пойдем, Гаврила. Девушки устали, пусть отдохнут.</p></sp>
 <sp who="#gavrila"><speaker>Гаврила.</speaker> <p>Это верно. <stage>(Подходит к саду.)</stage></p></sp>
